@@ -13,10 +13,11 @@ bool RecursiveBinarySearch::Search(std::vector<int> storage, int intent) {
 }
 
 int RecursiveBinarySearch::binarySearch(std::vector<int> storage,int intent,int begin,int end){
-    int midpoint = (begin+end)/2;
     if(begin>end){
         return -1; //-1 can help check bounds and return position 0
     }
+    
+    int midpoint = (begin+end)/2;
     if(storage.at(midpoint)<intent){
         return binarySearch(storage,intent,midpoint+1,end); //Find the right side of a vector
     }
