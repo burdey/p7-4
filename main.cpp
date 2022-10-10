@@ -23,6 +23,7 @@ int main() {
     q1.sort(inputs,0,inputs.size()-1); //Can't remove input.size
 
     RecursiveBinarySearch q2;
+    int found1 = q2.Search(inputs,1);
     int found = q2.binarySearch(inputs,1,0,inputs.size()-1); //Can't change false using search
     if (found > 0){
         cout << "true";
